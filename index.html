@@ -1,15 +1,8 @@
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
-  <head>
-    <script src="./color-modes.js"></script>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head><script src="./color-modes.js"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-
-    <link rel="stylesheet" href="/searchbar.css">
-
-    <link rel="stylesheet" href = "/searchbar.js">
-
-    <link href="./bootstrap.min.css" rel="stylesheet">
+  <link href="./bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -85,11 +78,13 @@
       }
     </style>
 
-    <link href="carousel.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="d-flex h-100 text-center text-bg-dark">
 
-    <!-- External symbols from an outside source.  -->
+    <!-- SVGs -->
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -106,7 +101,7 @@
       </symbol>
     </svg>
 
-    <!-- Mode change Dropdown -->
+    <!-- Mode Change -->
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
       <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
               id="bd-theme"
@@ -142,178 +137,40 @@
       </ul>
     </div>
 
-    <!-- Navbar -->
-    <header data-bs-theme="dark">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Carousel</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Types.html">Types</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/impact.html">Impact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Stats</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Solutions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-            </ul>
-            <div>
-              <!-- search -->
-       
-              <!-- end  -->
+    <!-- Main Div. -->
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
-
-            </div>
-          </div>
+      <!-- Navbar -->
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">Title</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#">Types</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#">Impact</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#">Stats</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#">Solutions</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#">FAQ</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#">About Us</a>
+          </nav>
         </div>
-      </nav>
-        </header>
+      </header>
 
-    <!-- Main part of the page -->
-    <main>
-      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1 style="color:black;">Example headline.</h1>
-                <p style="color:grey;" class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      <!-- Main Content -->
+      <main class="px-3">
+        <h1>Hey there!</h1>
+        <p class="lead">Textile Wastes are a HUGE issue. Not just for humans, but the ecosystem as a whole. This website will try to exhibit the reality, nothing more, nothing less. <br> <br> You can either go through the website as designed, or choose your own way around the website.<br> <br> Let's start.</p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Types of Textile Wastes.</a>
+        </p>
+      </main>
 
+      <!-- Footer used as bottom spacing. -->
+      <footer class="mt-auto text-white-50">
+        
+      </footer>
+    </div>
+<script src="./bootstrap.bundle.min.js"></script>
 
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-
-      <div class="container marketing">
-
-        <!-- START THE FEATURETTES -->
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">What are Textile Wastes?</h2>
-            <p class="lead">Textile wastage can be defined as the material that becomes unusable or worthless after the end of the production process of any textile product. Wastage produce in every stage of the textile manufacturing process such as spinning, weaving, knitting, dyeing, finishing and clothing.</p>
-          </div>
-          <div class="col-md-5">
-            <img src = "./Pics/TEXTILEWASTEMAIN.jpg" width="450"/>
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1">Textile Waste is more than just a formal term.</h2>
-            <p class="lead">Maybe it's time to finally pay some attention to the concerning trends of this new danger to humanity and by extension, all life on Earth.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn More</a></p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img src = "./Pics/TEXTILEWASTEHOMESTATS.jpg" width="450"/>
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">It's not all dark!</h2>
-            <p class="lead">See what the world can do to help reduce Testile Wastage!</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Solutions</a></p>
-          </div>
-          <div class="col-md-5">
-            <img src = "./Pics/sol.jpg" width="450"/>
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
-
-        <div class="row">
-          <div class="col-lg-4">
-            <img src = "./Pics/FAQ.jpg" width="300"/>
-            <br><br>
-            <h2 class="fw-normal">Questions?</h2>
-            <p>Check out our FAQ page!</p>
-            <p><a class="btn btn-outline-success" href="#">Show Me &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img src = "./Pics/think.png" width="150"/>
-            <br><br>
-            <h2 class="fw-normal">Wanna know who we are?</h2>
-            <p>Get to know a little about us!</p>
-            <p><a class="btn btn-outline-success" href="#">About Us &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img src = "./Pics/git.jpg" width="150"/>
-            <br><br>
-            <h2 class="fw-normal">See how the website was built!</h2>
-            <p>Check out the code to this website on GitHub!</p>
-            <p><a class="btn btn-outline-success" fill = "lightgreen" href="#">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-        </div>
-
-      </div>
-    </main>
-
-    <script src="./bootstrap.bundle.min.js"></script>
-  </body>
+    </body>
 </html>
