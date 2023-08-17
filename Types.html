@@ -6,6 +6,14 @@
     <link href="./bootstrap.min.css" rel="stylesheet">
 
     <style>
+      .😑{
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -166,9 +174,24 @@
                 <a class="nav-link" href="./aboutus.html">About Us</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <div class="dropdown dropstart">
+              <button class="btn btn-outline-success dropdown-toggle dropdown-menu-start" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Search
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start" >
+                <div class="input-group mb-3 rounded-0">
+                  <input type="text" id="searchbox" class="form-control rounded-0" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                </div>
+                <div id="options">
+                  <li class="dropdown-item"><a href="./index.html" class="😑">Home</a></li>
+                  <li class="dropdown-item"><a href="./Types.html" class="😑">Types</a></li>
+                  <li class="dropdown-item"><a href="./impact.html" class="😑">Impact</a></li>
+                  <li class="dropdown-item"><a href="./Statistics.html" class="😑">Stats</a></li>
+                  <li class="dropdown-item"><a href="./Solutions.html" class="😑">Solutions</a></li>
+                  <li class="dropdown-item"><a href="./FAQ.html" class="😑">FAQ</a></li>
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -177,6 +200,7 @@
     <!-- Main part of the page -->
     <main>
 
+      <img src="./Pics/BANNER.webp" class="img-fluid" style="width:100%; object-fit: cover; height:40vh">
         <!-- Page intro -->
         <div class="bg-dark text-secondary px-4 py-5 text-center">
             <div class="py-5">
@@ -257,6 +281,19 @@
     </main>
 
     <script src="./bootstrap.bundle.min.js"></script>
-
+    <script>
+      document.getElementById("searchbox").oninput = () => {search()}
+      function search(){
+        let options = document.getElementById("options").children
+        let search_param = document.getElementById("searchbox").value
+        for (var i = 0; i <= Array.from(options).length - 1;i++){
+          if (options[i].children[0].innerText.toLowerCase().includes(search_param.toLowerCase())){
+            options[i].style.display = "block"
+          }else{
+            options[i].style.display = "none"
+          }
+        }
+      }
+    </script>
   </body>
-</html>s
+</html>
