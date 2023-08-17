@@ -1,1 +1,0 @@
-To open the main page of the website, open 'index.html'. It is present in the root folder.
